@@ -1,0 +1,170 @@
+.text-container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: -200px;
+    width: 50vw;
+}
+
+.text-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5%;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: -250px;
+    margin-left: 700px;
+    width: 50vw;
+    color: #0d3706;
+}
+
+.imtext-container {
+    display: flex;
+    weight: 900px;
+    height: 700px;
+}
+
+.apple {
+    color: #0d752a;
+    font-family: "Apple Chancery", cursive;
+    font-size: 70px
+}
+
+.chancery {
+    color: dark-green;
+    font-family: "Apple Chancery", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2rem;
+    padding-left: 4%;
+    margin-left: 700px;
+    margin-top: 50px;
+}
+
+.special-button-home {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    color: #edf0b9;
+    background: #0d752a;
+    border-radius: 10px;
+    font-family: "Apple Chancery", cursive;
+    transition: box-shadow 0.3s ease; /* Сглаживание эффекта */
+    width: 234px;
+    height: 59px;
+    cursor: pointer;
+    border: none;
+}
+
+.special-button-home:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Ширина и высота тени вдвое больше padding + дополнительное расширение */
+}
+
+.image-healthydiet {
+    position: relative;
+    height: 500px;
+    float: right;
+    margin-right: 5%;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.image-healthydiet:hover {
+    margin-top: 3%;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.photo_container {
+    margin-top: 200px;
+    display: flex;
+}
+
+.photo {
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    margin-right: 10px; /* Отступ между фотографиями */
+}
+
+.flex_row_bc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding: 40px;
+    gap: 40px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.image_food {
+    position: relative;
+    display: inline-block; /* Размеры будут соответствовать содержимому */
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.image_food img {
+    width: 100%;
+    transition: filter 0.3s ease-in-out; /* Плавная анимация изменения фильтра */
+    border-radius: 10px;
+}
+
+.food_text {
+    position: absolute;
+    top: -50px; /* Смещение вверх */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 1.2em;
+    opacity: 0;
+    transition: all 0.3s ease-in-out; /* Анимация для плавного появления */
+}
+
+.image_food::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 107%;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнение с альфа-каналом */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.image_food:hover .food_text {
+    top: 50%; /* Смещение к центру по вертикали */
+    transform: translateX(-50%) translateY(-50%); /* Центрирование текста */
+    opacity: 1; /* Появление текста при наведении на контейнер */
+}
+
+.image_food:hover::before {
+    opacity: 1; /* Появление тени при наведении */
+}

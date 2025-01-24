@@ -1,0 +1,82 @@
+.body-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh
+}
+.card-container {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 310px));
+    position: relative;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 20px;
+}
+.card-monthly {
+    margin: 5%;
+    width: fit-content;
+    text-align: center;
+    border: 2px solid rgb(58, 71, 22);
+    border-radius: 12px;
+}
+.card-3months {
+    margin: 5%;
+    width: fit-content;
+    text-align: center;
+    border: 2px solid rgb(58, 71, 22);
+    border-radius: 12px;
+}
+.card-annual {
+    margin: 5%;
+    width: fit-content;
+    text-align: center;
+    border: 2px solid rgb(58, 71, 22);
+    border-radius: 12px;
+}
+.name-card {
+    margin: auto;
+    margin-top: 5%;
+    width: fit-content;
+    text-align: center;
+}
+.price-card {
+    margin: auto;
+    margin-bottom: 8%;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.text-card-container {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: fit-content;
+    text-align: left;
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.explore-container {
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.button-explore {
+    padding: 11px 22px 8px 22px;
+    font-family: "Apple Chancery", cursive;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    color: #edf0b9;
+    text-decoration: none;
+    background-color: #0d752a;
+    border-radius: 8px;
+}
