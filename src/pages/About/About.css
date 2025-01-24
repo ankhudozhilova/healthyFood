@@ -1,24 +1,18 @@
-.box-for-images {
-  position: relative;
-  float: right;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 5%;
+.horizontal-container {
+    display: flex; /* Устанавливает флекс-контейнер */
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
 }
-.image-nutrition {
-  width: 500px;
-  height: 500px;
-}
-.text-image {
-  margin-top: 5%;
+
+.text-item {
+    flex: 1; /* Задает элементам одинаковую ширину */
+    margin: 5%; /* Добавляет отступы между элементами */
+    
 }
 
 .text-container {
     display: grid;
     margin: 0 auto;
-    width: 100%;
     grid-gap: 20px;
     color: #0d752a;
     font-family: "Apple Chancery", cursive;
@@ -38,7 +32,6 @@
     padding: 5%;
     font-weight: 500;
     font-size: 16px;
-    margin-top: -500px;
     margin-left: 65%;
     width: 30vw;
 }
@@ -52,8 +45,7 @@
   padding: 5%; 
   font-weight: 500;
   font-size: 16px;
-  margin-top: -450px;
-  margin-top: -450px;
+  margin-top: 5%;
   width: 40vw;
 }
 
@@ -62,8 +54,7 @@
     flex-direction: column;
     height: 100%;
     width: 1000px;
-    margin-top: 600px;
-    margin-left: -1000px;
+    margin-left: -100px;
 }
 
 .faq_title_container {

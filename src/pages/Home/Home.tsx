@@ -26,7 +26,7 @@ function Home() {
     return (
         <div>
             <div className='imtext-container'>
-                <img src='./src/assets/bowl.png' alt='Astronaut' className='image-astronaut' />
+                <img src='./src/assets/bowl.png' alt='HealthyFOOD' className='image-healthydiet' />
                 <div className="text-container1">
                     <div className='apple'> HealthyFOOD - EAT and TRAIN,</div>
                     <div className='apple'>RELAX and REPEAT </div>
@@ -34,13 +34,15 @@ function Home() {
             </div>
 
             <div className='text-container2'>
-                <div className='chancery'>There is much more to the void that the eyes</div>
-                <div className='chancery'>can see. Let's go to the place where gravity</div>
-                <div className='chancery'>doesn't matter</div>
+                <div className='chancery'>Welcome to the healthy eating page! </div>
+                <div className='chancery'>With healtyFOOD you can: </div>
+                <div className='chancery'>- Find out the CPFC of any product,</div>
+                <div className='chancery'>- Get an individual selection of healthy recipes</div>
+                <div className='chancery'>- Find out the composition of a specific dish!</div>
             </div>
 
             <div className='button-container'>
-                <button className='special-button-home' onClick={() => navigate('/about')}>Explore more</button>
+                <button className='special-button-home' onClick={() => navigate('/about')}>Try and Buy</button>
             </div>
 
             <div className='photo_container'>

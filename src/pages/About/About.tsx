@@ -5,7 +5,6 @@ const apiUrl = 'https://api.calorieninjas.com/v1/nutrition?query=';
 const query = ['100g chicken', '100g onion', '1 egg', '100g beef', '100g lamb', '100g cheese', '100g milk', '100g banana', '100g pork', '100g apple'];
 
 function About() {
-    const [name, setName] = useState('');
     const [calories, setCalorries] = useState('');
     const [protein, setProtein] = useState('');
     const [fat, setFat] = useState('');
@@ -28,12 +27,10 @@ function About() {
 					const item = obj.items[0];
 					
 					//console.log(item);
-					setName(item.name);
 					setCalorries(item.calories);
 					setProtein(item.protein_g);
 					setFat(item.fat_total_g);
 					setCarbo(item.carbohydrates_total_g);
-					//console.log(obj.title);
 					//console.log(ingredients);
 					//console.log(servings);
 					//console.log(instructions);
@@ -81,27 +78,28 @@ function About() {
     );
     return (
         <div>
-            <div className='text-container'>
-                <div className='text-container-about'>
-                  <div className='apple-48'>About our program</div>
-                  <div className='apple-36'>Hi friend!</div>
-                  <div className='apple-36'>
-		            We are a young project to create healthy eating plans. 
- 		            With us, you can fulfill your childhood dream 
-		            of a new healthy life. We present you an affordable
-		            service for organizing your healthy meals. Just choose 
-		            a data plan, and we and our professional team will 
-		            do the rest!
-                  </div>
+            <div className="horizontal-container">
+                <div className='text-item'>
+                    <div className='apple-48'>So, who are we?</div>
+                    <div className='apple-36'>We are the healthyFOOD team!</div>
+                    <div className='apple-36'>
+                        Our team offers you a package of everything you need to start changing your body today!
+                        With HealthyFOOD, you can find out the composition of any dish,
+                        get an individual selection of recipes,
+                        and calculate the BMI for any product.
+                        Just look how cool it looks!
+                    </div>
                 </div>
-                <div className='text-container-facts'>
+                <div className='text-item'>
                     <div className='apple-48'>Do You Know That</div>
-			        <div className='apple-48'>{query[index]} conains:</div>
-			        <div className='chancery-28'>Calories: {calories}</div>
-			        <div className='chancery-28'>Protein: {protein}</div>
-			        <div className='chancery-28'>Fat: {fat}</div>
-			        <div className='chancery-28'>Carbohydrates: {carbo}</div>
+                    <div className='apple-48'>{query[index]} conains:</div>
+                    <div className='chancery-28'>Calories: {calories}</div>
+                    <div className='chancery-28'>Protein: {protein}</div>
+                    <div className='chancery-28'>Fat: {fat}</div>
+                    <div className='chancery-28'>Carbohydrates: {carbo}</div>
                 </div>
+            </div>
+            <div className='text-container'>
                 {faqContent}
             </div>
         </div>
